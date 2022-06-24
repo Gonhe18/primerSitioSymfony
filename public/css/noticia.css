@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  background-color: floralwhite;
+}
+.contenedor {
+  width: 100%;
+  display: grid;
+  row-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4 auto);
+  grid-template-areas:
+    "header header header"
+    "section1 section2 section3"
+    "contenido2 contenido2 contenido2"
+    "footer footer footer";
+}
+hr {
+  width: 80%;
+  margin: auto;
+  border-bottom: 1px solid #000000;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+header {
+  width: 100%;
+  grid-area: header;
+  background-color: darkkhaki;
+  min-height: 100vh;
+}
+h1 {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4.5rem;
+}
+nav {
+  width: 100%;
+  text-align: center;
+}
+ul {
+  width: 100%;
+}
+li {
+  display: inline-block;
+  margin: 25px 100px;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 10px;
+}
+a:hover {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.section1 {
+  grid-area: section1;
+  background-color: azure;
+}
+.section2 {
+  grid-area: section2;
+  background-color: cadetblue;
+}
+.section3 {
+  grid-area: section3;
+  background-color: coral;
+}
+.section1,
+.section2,
+.section3,
+.contenido2 {
+  height: 50vh;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  padding: 5px;
+}
+h2 {
+  text-align: center;
+  padding: 5px;
+  font-size: 2rem;
+  margin: 10px 0;
+}
+.s1,
+.s2,
+.s3,
+.s4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.contenido2 {
+  grid-area: contenido2;
+  background-color: burlywood;
+}
+p {
+  line-height: 1.6;
+}
+footer {
+  grid-area: footer;
+  background-color: brown;
+}
+footer p {
+  color: darkorange;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}

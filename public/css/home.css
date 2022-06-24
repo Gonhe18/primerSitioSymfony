@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  background-color: floralwhite;
+}
+
+.contenedor {
+  width: 100%;
+  display: grid;
+  row-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4 auto);
+  grid-template-areas:
+    "header header header"
+    "section1 section1 section1"
+    "section2 section2 section2"
+    "section3 section3 section3"
+    "footer footer footer";
+}
+hr {
+  width: 80%;
+  margin: auto;
+  border-bottom: 1px solid #000000;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+header {
+  width: 100%;
+  grid-area: header;
+  background-color: darkkhaki;
+  min-height: 100vh;
+}
+h1 {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4.5rem;
+}
+nav {
+  width: 100%;
+  text-align: center;
+}
+ul {
+  width: 100%;
+}
+li {
+  display: inline-block;
+  margin: 25px 100px;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 10px;
+}
+a:hover {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.section1,
+.section2,
+.section3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 25px;
+  height: 300px;
+}
+.section1 {
+  background-color: lightcyan;
+  grid-area: section1;
+}
+.s1,
+.s2,
+.s3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  line-height: 1.6;
+}
+.h2_1,
+.h2_2,
+.h2_3 {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.h2_1 {
+  background-color: orange;
+  margin-right: 20px;
+}
+.section2 {
+  background-color: blanchedalmond;
+  grid-area: section2;
+}
+.h2_2 {
+  background-color: cornflowerblue;
+  order: 1;
+}
+.section3 {
+  background-color: gainsboro;
+  grid-area: section3;
+}
+.h2_3 {
+  background-color: forestgreen;
+  margin-right: 20px;
+}
+
+footer {
+  grid-area: footer;
+  background-color: brown;
+}
+footer p {
+  color: darkorange;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}

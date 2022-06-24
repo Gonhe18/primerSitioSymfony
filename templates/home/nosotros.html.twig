@@ -1,0 +1,45 @@
+{% extends 'nosotrosBase.html.twig' %} {% block title %}{{ encabezado }}{%
+endblock %} {% block body %}
+<div class="contenedor">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="{{ url('home') }}">Inicio</a></li>
+        <li><a href="{{ url('noticias') }}">Noticias</a></li>
+        <li><a href="{{ url('nosotros') }}">Sobre nosotros</a></li>
+      </ul>
+      <hr />
+    </nav>
+    <h1>{{ titulo }}</h1>
+  </header>
+  <section class="nosotros">
+    <h2>Sobre nosotros!!</h2>
+    <div class="parrafos">
+      <p class="parrafo1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, sequi
+        cumque. Nobis, nam, odio deleniti doloremque rem facere corrupti quidem
+        adipisci et ipsam minus aspernatur obcaecati debitis est? Esse, vero.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, sequi
+        cumque. Nobis, nam, odio deleniti doloremque rem facere corrupti quidem
+        adipisci et ipsam minus aspernatur obcaecati debitis est? Esse, vero.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, sequi
+        cumque. Nobis, nam, odio deleniti doloremque rem facere corrupti quidem
+        adipisci et ipsam minus aspernatur obcaecati debitis est? Esse, vero.
+      </p>
+      <p class="parrafo2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, sequi
+        cumque. Nobis, nam, odio deleniti doloremque rem facere corrupti quidem
+        adipisci et ipsam minus aspernatur obcaecati debitis est? Esse, vero.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, sequi
+        cumque. Nobis, nam, odio deleniti doloremque rem facere corrupti quidem
+        adipisci et ipsam minus aspernatur obcaecati debitis est? Esse, vero.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, sequi
+        cumque. Nobis, nam, odio deleniti doloremque rem facere corrupti quidem
+        adipisci et ipsam minus aspernatur obcaecati debitis est? Esse, vero.
+      </p>
+    </div>
+  </section>
+
+  <footer><p>Curso PHP & Symfony</p></footer>
+</div>
+{% endblock %}

@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %} {% block title %}{{ encabezado }}{% endblock %}
+{% block body %}
+<div class="contenedor">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="{{ url('home') }}">Inicio</a></li>
+        <li><a href="{{ url('noticias') }}">Noticias</a></li>
+        <li><a href="{{ url('nosotros') }}">Sobre nosotros</a></li>
+      </ul>
+      <hr />
+    </nav>
+    <h1>{{ titulo }}</h1>
+  </header>
+
+  <div class="section1">
+    <h2 class="h2_1">Tendencia</h2>
+    <p class="s1">
+      pLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui
+      sunt hic? Unde esse ratione dolore voluptates deserunt porro cum totam
+      vitae magni, sed quis? Cumque tenetur veniam ipsa commodi. <br />
+      pLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui
+      sunt hic? Unde esse ratione dolore voluptates deserunt porro cum totam
+      vitae magni, sed quis? Cumque tenetur veniam ipsa commodi.
+    </p>
+  </div>
+
+  <div class="section2">
+    <h2 class="h2_2">Popular</h2>
+    <p class="s2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae atque
+      laudantium soluta distinctio, itaque velit voluptate ullam voluptatum in
+      numquam ut mollitia consequuntur veniam repudiandae delectus, cupiditate
+      alias. Officiis, incidunt? <br />
+      pLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui
+      sunt hic? Unde esse ratione dolore voluptates deserunt porro cum totam
+      vitae magni, sed quis? Cumque tenetur veniam ipsa commodi.
+    </p>
+  </div>
+
+  <div class="section3">
+    <h2 class="h2_3">Random</h2>
+    <p class="s3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae atque
+      laudantium soluta distinctio, itaque velit voluptate ullam voluptatum in
+      numquam ut mollitia consequuntur veniam repudiandae delectus, cupiditate
+      alias. Officiis, incidunt? <br />
+      pLorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui
+      sunt hic? Unde esse ratione dolore voluptates deserunt porro cum totam
+      vitae magni, sed quis? Cumque tenetur veniam ipsa commodi.
+    </p>
+  </div>
+
+  <footer><p>Curso PHP & Symfony</p></footer>
+</div>
+{% endblock %}
